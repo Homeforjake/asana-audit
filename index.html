@@ -667,16 +667,16 @@
   <div class="header">
     <div>
       <h1>Asana Audit — pyeoptics.com</h1>
-      <div class="meta">Workspace: pyeoptics.com &middot; Аккаунт: Коля Шепеленко &middot; 17 февраля 2026</div>
+      <div class="meta">Workspace: pyeoptics.com &middot; Аккаунт: Коля Шепеленко &middot; 19 февраля 2026 (обновлено)</div>
     </div>
     <div style="display:flex;align-items:center;gap:12px;">
       <div class="health-ring">
         <svg width="140" height="140" viewBox="0 0 140 140">
           <circle cx="70" cy="70" r="60" fill="none" stroke="var(--surface2)" stroke-width="12"/>
-          <circle cx="70" cy="70" r="60" fill="none" stroke="var(--yellow)" stroke-width="12"
-            stroke-dasharray="377" stroke-dashoffset="132" stroke-linecap="round"/>
+          <circle cx="70" cy="70" r="60" fill="none" stroke="var(--green)" stroke-width="12"
+            stroke-dasharray="377" stroke-dashoffset="95" stroke-linecap="round"/>
         </svg>
-        <div class="score" style="color:var(--yellow)">C+</div>
+        <div class="score" style="color:var(--green)">B</div>
       </div>
     </div>
   </div>
@@ -699,19 +699,19 @@
 
     <div class="stats">
       <div class="stat info">
-        <div class="number">104</div>
+        <div class="number">101</div>
         <div class="label">Всего проектов</div>
       </div>
       <div class="stat good">
-        <div class="number">84</div>
+        <div class="number">65</div>
         <div class="label">Активных</div>
       </div>
       <div class="stat accent">
-        <div class="number">20</div>
+        <div class="number">36</div>
         <div class="label">Архивных</div>
       </div>
       <div class="stat info">
-        <div class="number">16</div>
+        <div class="number">17</div>
         <div class="label">Команд</div>
       </div>
       <div class="stat bad">
@@ -719,8 +719,40 @@
         <div class="label">Пустых команд</div>
       </div>
       <div class="stat warn">
-        <div class="number">25</div>
+        <div class="number">13</div>
         <div class="label">Неактивных >90 дн</div>
+      </div>
+    </div>
+
+    <!-- Progress tracker -->
+    <div class="card" style="border:2px solid var(--green);margin-bottom:20px;">
+      <h2 style="color:var(--green);">Прогресс реорганизации</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px;text-align:center;">
+        <div>
+          <div style="font-size:13px;color:var(--text2);margin-bottom:8px;">Активных проектов</div>
+          <div style="display:flex;align-items:baseline;justify-content:center;gap:8px;">
+            <span style="font-size:24px;color:var(--text2);text-decoration:line-through;">84</span>
+            <span style="font-size:20px;color:var(--text2);">→</span>
+            <span style="font-size:32px;font-weight:700;color:var(--green);">65</span>
+          </div>
+          <div style="font-size:13px;color:var(--green);font-weight:600;">-19 проектов</div>
+        </div>
+        <div>
+          <div style="font-size:13px;color:var(--text2);margin-bottom:8px;">Архивировано</div>
+          <div style="display:flex;align-items:baseline;justify-content:center;gap:8px;">
+            <span style="font-size:24px;color:var(--text2);text-decoration:line-through;">20</span>
+            <span style="font-size:20px;color:var(--text2);">→</span>
+            <span style="font-size:32px;font-weight:700;color:var(--accent2);">36</span>
+          </div>
+          <div style="font-size:13px;color:var(--accent2);font-weight:600;">+16 проектов</div>
+        </div>
+        <div>
+          <div style="font-size:13px;color:var(--text2);margin-bottom:8px;">Новые команды</div>
+          <div style="display:flex;align-items:baseline;justify-content:center;gap:8px;">
+            <span style="font-size:32px;font-weight:700;color:var(--blue);">+3</span>
+          </div>
+          <div style="font-size:13px;color:var(--blue);font-weight:600;">ритейл, онлайн, экономика</div>
+        </div>
       </div>
     </div>
 
@@ -730,30 +762,30 @@
         <div style="margin:16px 0;">
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
             <span style="font-size:13px;color:var(--text2)">Активные проекты с изменениями за 30 дн</span>
-            <span style="font-weight:600;color:var(--green)">38 / 84</span>
+            <span style="font-weight:600;color:var(--green)">49 / 65 (75%)</span>
           </div>
-          <div class="bar-track"><div class="bar-fill" style="width:45%;background:var(--green)"></div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:75%;background:var(--green)"></div></div>
         </div>
         <div style="margin:16px 0;">
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
             <span style="font-size:13px;color:var(--text2)">Неактивные >3 мес</span>
-            <span style="font-weight:600;color:var(--red)">25 / 84</span>
+            <span style="font-weight:600;color:var(--red)">13 / 65 (20%)</span>
           </div>
-          <div class="bar-track"><div class="bar-fill" style="width:30%;background:var(--red)"></div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:20%;background:var(--red)"></div></div>
         </div>
         <div style="margin:16px 0;">
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
             <span style="font-size:13px;color:var(--text2)">Пустые команды</span>
-            <span style="font-weight:600;color:var(--orange)">5 / 16</span>
+            <span style="font-weight:600;color:var(--orange)">5 / 17</span>
           </div>
-          <div class="bar-track"><div class="bar-fill" style="width:31%;background:var(--orange)"></div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:29%;background:var(--orange)"></div></div>
         </div>
         <div style="margin:16px 0;">
           <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-            <span style="font-size:13px;color:var(--text2)">Дублирующиеся сущности</span>
-            <span style="font-weight:600;color:var(--yellow)">6</span>
+            <span style="font-size:13px;color:var(--text2)">Новые функциональные команды</span>
+            <span style="font-weight:600;color:var(--blue)">+3</span>
           </div>
-          <div class="bar-track"><div class="bar-fill" style="width:20%;background:var(--yellow)"></div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:18%;background:var(--blue)"></div></div>
         </div>
       </div>
 
@@ -797,29 +829,29 @@
       <h2>Активность проектов по давности изменений</h2>
       <div style="display:flex;gap:24px;margin:20px 0;flex-wrap:wrap;">
         <div style="text-align:center;">
-          <div style="font-size:36px;font-weight:700;color:var(--green)">38</div>
+          <div style="font-size:36px;font-weight:700;color:var(--green)">49</div>
           <div style="font-size:12px;color:var(--text2)">0–30 дней</div>
           <div style="width:100%;height:4px;background:var(--green);border-radius:2px;margin-top:6px"></div>
         </div>
         <div style="text-align:center;">
-          <div style="font-size:36px;font-weight:700;color:var(--blue)">8</div>
+          <div style="font-size:36px;font-weight:700;color:var(--blue)">2</div>
           <div style="font-size:12px;color:var(--text2)">30–60 дней</div>
           <div style="width:100%;height:4px;background:var(--blue);border-radius:2px;margin-top:6px"></div>
         </div>
         <div style="text-align:center;">
-          <div style="font-size:36px;font-weight:700;color:var(--yellow)">13</div>
-          <div style="font-size:12px;color:var(--text2)">60–120 дней</div>
+          <div style="font-size:36px;font-weight:700;color:var(--yellow)">1</div>
+          <div style="font-size:12px;color:var(--text2)">60–90 дней</div>
           <div style="width:100%;height:4px;background:var(--yellow);border-radius:2px;margin-top:6px"></div>
         </div>
         <div style="text-align:center;">
-          <div style="font-size:36px;font-weight:700;color:var(--orange)">23</div>
-          <div style="font-size:12px;color:var(--text2)">120–180 дней</div>
+          <div style="font-size:36px;font-weight:700;color:var(--orange)">13</div>
+          <div style="font-size:12px;color:var(--text2)">90–160 дней</div>
           <div style="width:100%;height:4px;background:var(--orange);border-radius:2px;margin-top:6px"></div>
         </div>
         <div style="text-align:center;">
-          <div style="font-size:36px;font-weight:700;color:var(--red)">2</div>
+          <div style="font-size:36px;font-weight:700;color:var(--red)">0</div>
           <div style="font-size:12px;color:var(--text2)">&gt;180 дней</div>
-          <div style="width:100%;height:4px;background:var(--red);border-radius:2px;margin-top:6px"></div>
+          <div style="width:100%;height:4px;background:var(--text2);border-radius:2px;margin-top:6px"></div>
         </div>
       </div>
     </div>
@@ -827,89 +859,74 @@
 
   <!-- ==================== TEAMS NOW ==================== -->
   <div id="teams-now" class="section">
-    <div class="section-title">Текущая структура команд (16)</div>
+    <div class="section-title">Текущая структура команд (17) — обновлено 19 фев</div>
 
     <!-- Bar chart -->
     <div class="card">
       <h2>Проектов на команду</h2>
       <div class="bar-chart">
         <div class="bar-row">
-          <div class="bar-label">якорный круг</div>
-          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--red)">17</div></div>
-          <div class="bar-count" style="color:var(--red)">17</div>
-        </div>
-        <div class="bar-row">
           <div class="bar-label">товароведение</div>
-          <div class="bar-track"><div class="bar-fill" style="width:70%;background:var(--orange)">12</div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--orange)">12</div></div>
           <div class="bar-count">12</div>
         </div>
         <div class="bar-row">
-          <div class="bar-label">бренд</div>
-          <div class="bar-track"><div class="bar-fill" style="width:47%;background:var(--accent2)">8</div></div>
+          <div class="bar-label">разработка</div>
+          <div class="bar-track"><div class="bar-fill" style="width:67%;background:var(--cyan)">8</div></div>
           <div class="bar-count">8</div>
         </div>
         <div class="bar-row">
           <div class="bar-label">личные доски</div>
-          <div class="bar-track"><div class="bar-fill" style="width:47%;background:var(--blue)">8</div></div>
-          <div class="bar-count">8</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">разработка</div>
-          <div class="bar-track"><div class="bar-fill" style="width:47%;background:var(--cyan)">8</div></div>
-          <div class="bar-count">8</div>
+          <div class="bar-track"><div class="bar-fill" style="width:58%;background:var(--blue)">7</div></div>
+          <div class="bar-count">7</div>
         </div>
         <div class="bar-row">
           <div class="bar-label">оптика</div>
-          <div class="bar-track"><div class="bar-fill" style="width:41%;background:var(--green)">7</div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:58%;background:var(--green)">7</div></div>
           <div class="bar-count">7</div>
         </div>
         <div class="bar-row">
           <div class="bar-label">счастливая команда</div>
-          <div class="bar-track"><div class="bar-fill" style="width:41%;background:var(--pink)">7</div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:58%;background:var(--pink)">7</div></div>
           <div class="bar-count">7</div>
         </div>
         <div class="bar-row">
+          <div class="bar-label">якорный круг</div>
+          <div class="bar-track"><div class="bar-fill" style="width:58%;background:var(--yellow)">7</div></div>
+          <div class="bar-count" style="color:var(--yellow)">7 <span style="font-size:11px;color:var(--text2)">было 17</span></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">бренд</div>
+          <div class="bar-track"><div class="bar-fill" style="width:33%;background:var(--accent2)">4</div></div>
+          <div class="bar-count">4</div>
+        </div>
+        <div class="bar-row">
           <div class="bar-label">продакт дизайн</div>
-          <div class="bar-track"><div class="bar-fill" style="width:23%;background:var(--accent2)">4</div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:33%;background:var(--accent2)">4</div></div>
           <div class="bar-count">4</div>
         </div>
         <div class="bar-row">
           <div class="bar-label">ceo</div>
-          <div class="bar-track"><div class="bar-fill" style="width:17%;background:var(--green)">3</div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:25%;background:var(--green)">3</div></div>
           <div class="bar-count">3</div>
         </div>
         <div class="bar-row">
-          <div class="bar-label">красивая среда для творчества</div>
-          <div class="bar-track"><div class="bar-fill" style="width:17%;background:var(--yellow)">3</div></div>
-          <div class="bar-count">3</div>
+          <div class="bar-label" style="color:var(--blue)">ритейл опыт <span class="badge active" style="font-size:10px">NEW</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:25%;background:var(--blue)">3</div></div>
+          <div class="bar-count" style="color:var(--blue)">3</div>
         </div>
         <div class="bar-row">
-          <div class="bar-label">счастливый клиент</div>
-          <div class="bar-track"><div class="bar-fill" style="width:12%;background:var(--blue)">2</div></div>
-          <div class="bar-count">2</div>
+          <div class="bar-label" style="color:var(--blue)">онлайн опыт <span class="badge active" style="font-size:10px">NEW</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:17%;background:var(--blue)">2</div></div>
+          <div class="bar-count" style="color:var(--blue)">2</div>
         </div>
         <div class="bar-row">
-          <div class="bar-label" style="color:var(--red)">HR</div>
-          <div class="bar-track"><div class="bar-fill" style="width:0%;background:var(--red)"></div></div>
-          <div class="bar-count" style="color:var(--red)">0</div>
+          <div class="bar-label" style="color:var(--blue)">экономика <span class="badge active" style="font-size:10px">NEW</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:8%;background:var(--blue)">1</div></div>
+          <div class="bar-count" style="color:var(--blue)">1</div>
         </div>
         <div class="bar-row">
-          <div class="bar-label" style="color:var(--red)">POSошная</div>
-          <div class="bar-track"><div class="bar-fill" style="width:0%;background:var(--red)"></div></div>
-          <div class="bar-count" style="color:var(--red)">0</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label" style="color:var(--red)">yulia Kim: первая группа</div>
-          <div class="bar-track"><div class="bar-fill" style="width:0%;background:var(--red)"></div></div>
-          <div class="bar-count" style="color:var(--red)">0</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label" style="color:var(--red)">Онлайн</div>
-          <div class="bar-track"><div class="bar-fill" style="width:0%;background:var(--red)"></div></div>
-          <div class="bar-count" style="color:var(--red)">0</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label" style="color:var(--red)">Оптика (дубль)</div>
+          <div class="bar-label" style="color:var(--red)">HR / POSошная / yulia Kim / Онлайн / Оптика</div>
           <div class="bar-track"><div class="bar-fill" style="width:0%;background:var(--red)"></div></div>
           <div class="bar-count" style="color:var(--red)">0</div>
         </div>
@@ -1524,10 +1541,10 @@
 
   <!-- ==================== ALL PROJECTS ==================== -->
   <div id="all-projects" class="section">
-    <div class="section-title">Все 84 активных проекта</div>
+    <div class="section-title">Все 65 активных проектов — обновлено 19 фев</div>
 
     <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterProjects('all',this)">Все (84)</button>
+      <button class="filter-btn active" onclick="filterProjects('all',this)">Все (65)</button>
       <button class="filter-btn" onclick="filterProjects('active',this)">Активные ≤30д</button>
       <button class="filter-btn" onclick="filterProjects('moderate',this)">30–90д</button>
       <button class="filter-btn" onclick="filterProjects('stale',this)">90–180д</button>
@@ -1547,90 +1564,71 @@
           </tr>
         </thead>
         <tbody>
-          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Даша UX</td><td>личные доски</td><td>17 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>CEO</td><td>ceo</td><td>15 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>заказы</td><td>товароведение</td><td>16 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>письма</td><td>разработка</td><td>16 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>pye petrogradskaya</td><td>—</td><td>15 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>🚀 план</td><td>разработка</td><td>16 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>🦸 Доска Initflow</td><td>разработка</td><td>16 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>поСочная</td><td>товароведение</td><td>16 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>Gizmo</td><td>якорный круг</td><td>16 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="2" data-status="active"><td><span class="dot green"></span></td><td>гайды</td><td>счастливая команда</td><td>14 фев 2026</td><td>2</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>Artem</td><td>личные доски</td><td>14 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>правовой защитник</td><td>якорный круг</td><td>14 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>общее</td><td>якорный круг</td><td>14 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>финансы</td><td>якорный круг</td><td>14 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="4" data-status="active"><td><span class="dot green"></span></td><td>👉 запросы и бэклог</td><td>разработка</td><td>13 фев 2026</td><td>4</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="4" data-status="active"><td><span class="dot green"></span></td><td>brand general</td><td>бренд</td><td>12 фев 2026</td><td>4</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="4" data-status="active"><td><span class="dot green"></span></td><td>служба поддержки</td><td>счастливый клиент</td><td>13 фев 2026</td><td>4</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="4" data-status="active"><td><span class="dot green"></span></td><td>разработка аксессуаров</td><td>продакт дизайн</td><td>13 фев 2026</td><td>4</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="4" data-status="active"><td><span class="dot green"></span></td><td>Пират</td><td>ceo</td><td>13 фев 2026</td><td>4</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="5" data-status="active"><td><span class="dot green"></span></td><td>сайт</td><td>разработка</td><td>12 фев 2026</td><td>5</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="5" data-status="active"><td><span class="dot green"></span></td><td>мой склад</td><td>разработка</td><td>12 фев 2026</td><td>5</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="5" data-status="active"><td><span class="dot green"></span></td><td>клиентский опыт</td><td>счастливый клиент</td><td>12 фев 2026</td><td>5</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="5" data-status="active"><td><span class="dot green"></span></td><td>куратор бухгалтерии</td><td>якорный круг</td><td>12 фев 2026</td><td>5</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="6" data-status="active"><td><span class="dot green"></span></td><td>Вадя</td><td>личные доски</td><td>11 фев 2026</td><td>6</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="6" data-status="active"><td><span class="dot green"></span></td><td>Оптический Круг</td><td>оптика</td><td>11 фев 2026</td><td>6</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="6" data-status="active"><td><span class="dot green"></span></td><td>браковочная / контроль качества</td><td>товароведение</td><td>11 фев 2026</td><td>6</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="6" data-status="active"><td><span class="dot green"></span></td><td>прозрачный ассортимент</td><td>продакт дизайн</td><td>11 фев 2026</td><td>6</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="7" data-status="active"><td><span class="dot green"></span></td><td>закупошная</td><td>товароведение</td><td>9 фев 2026</td><td>7</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="7" data-status="active"><td><span class="dot green"></span></td><td>сервисы</td><td>якорный круг</td><td>10 фев 2026</td><td>7</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="7" data-status="active"><td><span class="dot green"></span></td><td>созвоны / якорный круг</td><td>якорный круг</td><td>10 фев 2026</td><td>7</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="7" data-status="active"><td><span class="dot green"></span></td><td>PYE X RINGO 💕</td><td>товароведение</td><td>9 фев 2026</td><td>7</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="8" data-status="active"><td><span class="dot green"></span></td><td>приложение</td><td>разработка</td><td>8 фев 2026</td><td>8</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="8" data-status="active"><td><span class="dot green"></span></td><td>аналитика</td><td>разработка</td><td>8 фев 2026</td><td>8</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="8" data-status="active"><td><span class="dot green"></span></td><td>facultative works</td><td>якорный круг</td><td>8 фев 2026</td><td>8</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="8" data-status="active"><td><span class="dot green"></span></td><td>разработка типографии</td><td>продакт дизайн</td><td>8 фев 2026</td><td>8</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="8" data-status="active"><td><span class="dot green"></span></td><td>Переход на НДС</td><td>якорный круг</td><td>8 фев 2026</td><td>8</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="8" data-status="active"><td><span class="dot green"></span></td><td>Оля FW</td><td>личные доски</td><td>8 фев 2026</td><td>8</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="9" data-status="active"><td><span class="dot green"></span></td><td>Команда Moscow (Happy store)</td><td>красивая среда</td><td>8 фев 2026</td><td>9</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="9" data-status="active"><td><span class="dot green"></span></td><td>🧐 фидбек по очкам</td><td>счастливая команда</td><td>8 фев 2026</td><td>9</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="9" data-status="active"><td><span class="dot green"></span></td><td>контент</td><td>бренд</td><td>8 фев 2026</td><td>9</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="9" data-status="active"><td><span class="dot green"></span></td><td>Образцы солнцезащитного окраса</td><td>оптика</td><td>7 фев 2026</td><td>9</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="12" data-status="active"><td><span class="dot green"></span></td><td>чёткие остатки</td><td>товароведение</td><td>5 фев 2026</td><td>12</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="12" data-status="active"><td><span class="dot green"></span></td><td>Katya</td><td>личные доски</td><td>5 фев 2026</td><td>12</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="12" data-status="active"><td><span class="dot green"></span></td><td>Распродажа 2025 (BF)</td><td>бренд</td><td>5 фев 2026</td><td>12</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="15" data-status="active"><td><span class="dot green"></span></td><td>продвижение</td><td>бренд</td><td>2 фев 2026</td><td>15</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="17" data-status="active"><td><span class="dot green"></span></td><td>🫀 любимки спб</td><td>красивая среда</td><td>31 янв 2026</td><td>17</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="20" data-status="active"><td><span class="dot green"></span></td><td>найм</td><td>счастливая команда</td><td>28 янв 2026</td><td>20</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="20" data-status="active"><td><span class="dot green"></span></td><td>Автоматизация Моего склада</td><td>оптика</td><td>27 янв 2026</td><td>20</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="22" data-status="active"><td><span class="dot green"></span></td><td>Kostya</td><td>личные доски</td><td>26 янв 2026</td><td>22</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="25" data-status="active"><td><span class="dot green"></span></td><td>HR х Оксана</td><td>счастливая команда</td><td>23 янв 2026</td><td>25</td><td><span class="badge ok">активен</span></td></tr>
-          <tr data-days="32" data-status="moderate"><td><span class="dot yellow"></span></td><td>Новый флагман на Солянке</td><td>якорный круг</td><td>15 янв 2026</td><td>32</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="36" data-status="moderate"><td><span class="dot yellow"></span></td><td>разработка очков</td><td>продакт дизайн</td><td>12 янв 2026</td><td>36</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="36" data-status="moderate"><td><span class="dot yellow"></span></td><td>Пайкратия</td><td>якорный круг</td><td>11 янв 2026</td><td>36</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="36" data-status="moderate"><td><span class="dot yellow"></span></td><td>проявленное продуктоведение</td><td>товароведение</td><td>11 янв 2026</td><td>36</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="43" data-status="moderate"><td><span class="dot yellow"></span></td><td>проект / иллюстрации онбординга</td><td>оптика</td><td>4 янв 2026</td><td>43</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="48" data-status="moderate"><td><span class="dot yellow"></span></td><td>Оптическое обучение</td><td>оптика</td><td>30 дек 2025</td><td>48</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="79" data-status="moderate"><td><span class="dot yellow"></span></td><td>проект / СДЭК</td><td>якорный круг</td><td>30 ноя 2025</td><td>79</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="84" data-status="moderate"><td><span class="dot yellow"></span></td><td>Порядок на сайте и в МС</td><td>товароведение</td><td>25 ноя 2025</td><td>84</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="89" data-status="moderate"><td><span class="dot orange"></span></td><td>Коврики. Оптический дизайн</td><td>оптика</td><td>20 ноя 2025</td><td>89</td><td><span class="badge warn">замедлился</span></td></tr>
-          <tr data-days="98" data-status="stale"><td><span class="dot orange"></span></td><td>👉 запросы и обратная связь</td><td>якорный круг</td><td>10 ноя 2025</td><td>98</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="99" data-status="stale"><td><span class="dot orange"></span></td><td>Yulyok</td><td>личные доски</td><td>10 ноя 2025</td><td>99</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="99" data-status="stale"><td><span class="dot orange"></span></td><td>Hello Kitty</td><td>бренд</td><td>10 ноя 2025</td><td>99</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="99" data-status="stale"><td><span class="dot orange"></span></td><td>заказы и отгрузки контрагентам</td><td>товароведение</td><td>10 ноя 2025</td><td>99</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="104" data-status="stale"><td><span class="dot orange"></span></td><td>Марат х Пай</td><td>якорный круг</td><td>5 ноя 2025</td><td>104</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="106" data-status="stale"><td><span class="dot orange"></span></td><td>Финансы 2.0</td><td>ceo</td><td>3 ноя 2025</td><td>106</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="106" data-status="stale"><td><span class="dot orange"></span></td><td>Сессия PYE x Garrett</td><td>якорный круг</td><td>3 ноя 2025</td><td>106</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="106" data-status="stale"><td><span class="dot orange"></span></td><td>Аудит кабинетов по РПН и РЗН</td><td>оптика</td><td>2 ноя 2025</td><td>106</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="107" data-status="stale"><td><span class="dot orange"></span></td><td>Nastya</td><td>личные доски</td><td>2 ноя 2025</td><td>107</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="109" data-status="stale"><td><span class="dot orange"></span></td><td>поставки</td><td>товароведение</td><td>31 окт 2025</td><td>109</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="113" data-status="stale"><td><span class="dot orange"></span></td><td>Asana — товарищи по внедрению</td><td>якорный круг</td><td>26 окт 2025</td><td>113</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="129" data-status="stale"><td><span class="dot orange"></span></td><td>клипоны 2.0</td><td>бренд</td><td>10 окт 2025</td><td>129</td><td><span class="badge stale">застой</span></td></tr>
-          <tr data-days="141" data-status="stale"><td><span class="dot red"></span></td><td>Распродажа 2024 (BF)</td><td>бренд</td><td>29 сен 2025</td><td>141</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>Хозяюшка &lt;3 Петербург</td><td>красивая среда</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>Совещание «на ходу»</td><td>якорный круг</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>HR переход в ASANA + NOTION</td><td>счастливая команда</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>КРАСНЫЕ КАРТОЧКИ (разбор)</td><td>счастливая команда</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>3-D</td><td>якорный круг</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>новые доставки и оплаты</td><td>товароведение</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>архив PYE</td><td>товароведение</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>Сертификат 2.0</td><td>якорный круг</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="143" data-status="stale"><td><span class="dot red"></span></td><td>Клининг 2.0</td><td>якорный круг</td><td>26 сен 2025</td><td>143</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="152" data-status="stale"><td><span class="dot red"></span></td><td>HR организовочная</td><td>счастливая команда</td><td>18 сен 2025</td><td>152</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="231" data-status="dead"><td><span class="dot red"></span></td><td>Ассистент</td><td>без команды</td><td>30 июн 2025</td><td>231</td><td><span class="badge dead">мёртв</span></td></tr>
-          <tr data-days="391" data-status="dead"><td><span class="dot red"></span></td><td>Новый год 2024-25 / Чек-лист</td><td>бренд</td><td>22 янв 2025</td><td>391</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>команда moscow (happy store)</td><td>ритейл опыт</td><td>19 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>ceo</td><td>ceo</td><td>19 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>пай os</td><td>якорный круг</td><td>19 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>новый флагман на солянке</td><td>якорный круг</td><td>19 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>пират</td><td>ceo</td><td>19 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>gizmo</td><td>якорный круг</td><td>19 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>заказы</td><td>товароведение</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>👉 запросы и бэклог</td><td>разработка</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>аналитика</td><td>разработка</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>закупошная</td><td>товароведение</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>🫀 любимки спб</td><td>ритейл опыт</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Даша UX</td><td>личные доски</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>клиентский опыт</td><td>онлайн опыт</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>финансы</td><td>экономика</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Вадя</td><td>личные доски</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>facultative works</td><td>якорный круг</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Artem</td><td>личные доски</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Автоматизация Моего склада</td><td>оптика</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Оптическое обучение</td><td>оптика</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Оптический Круг</td><td>оптика</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>чёткие остатки</td><td>товароведение</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>браковочная / контроль качества</td><td>товароведение</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Коврики. Оптический дизайн</td><td>оптика</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>прозрачный ассортимент</td><td>продакт дизайн</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="0" data-status="active"><td><span class="dot green"></span></td><td>Аудит кабинетов по РПН и РЗН</td><td>оптика</td><td>18 фев 2026</td><td>0</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>письма</td><td>разработка</td><td>17 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>brand general</td><td>бренд</td><td>18 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>🚀 план</td><td>разработка</td><td>17 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>оптимус прайм</td><td>якорный круг</td><td>18 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>🦸 Доска Initflow</td><td>разработка</td><td>17 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>разработка типографии</td><td>продакт дизайн</td><td>18 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="1" data-status="active"><td><span class="dot green"></span></td><td>Оля FW</td><td>личные доски</td><td>17 фев 2026</td><td>1</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="2" data-status="active"><td><span class="dot green"></span></td><td>HR х Оксана</td><td>счастливая команда</td><td>17 фев 2026</td><td>2</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>приложение</td><td>разработка</td><td>16 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>сайт</td><td>разработка</td><td>16 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>контент</td><td>бренд</td><td>16 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="3" data-status="active"><td><span class="dot green"></span></td><td>поСочная</td><td>товароведение</td><td>16 фев 2026</td><td>3</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="4" data-status="active"><td><span class="dot green"></span></td><td>гайды</td><td>счастливая команда</td><td>14 фев 2026</td><td>4</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="4" data-status="active"><td><span class="dot green"></span></td><td>разработка аксессуаров</td><td>продакт дизайн</td><td>15 фев 2026</td><td>4</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="6" data-status="active"><td><span class="dot green"></span></td><td>мой склад</td><td>разработка</td><td>12 фев 2026</td><td>6</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="6" data-status="active"><td><span class="dot green"></span></td><td>служба поддержки</td><td>онлайн опыт</td><td>13 фев 2026</td><td>6</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="6" data-status="active"><td><span class="dot green"></span></td><td>разработка очков</td><td>продакт дизайн</td><td>13 фев 2026</td><td>6</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="9" data-status="active"><td><span class="dot green"></span></td><td>PYE X RINGO 💕</td><td>товароведение</td><td>9 фев 2026</td><td>9</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="11" data-status="active"><td><span class="dot green"></span></td><td>🧐 фидбек по очкам</td><td>счастливая команда</td><td>8 фев 2026</td><td>11</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="11" data-status="active"><td><span class="dot green"></span></td><td>Образцы солнцезащитного окраса</td><td>оптика</td><td>7 фев 2026</td><td>11</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="14" data-status="active"><td><span class="dot green"></span></td><td>Katya</td><td>личные доски</td><td>5 фев 2026</td><td>14</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="17" data-status="active"><td><span class="dot green"></span></td><td>продвижение</td><td>бренд</td><td>2 фев 2026</td><td>17</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="22" data-status="active"><td><span class="dot green"></span></td><td>найм</td><td>счастливая команда</td><td>28 янв 2026</td><td>22</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="24" data-status="active"><td><span class="dot green"></span></td><td>Kostya</td><td>личные доски</td><td>26 янв 2026</td><td>24</td><td><span class="badge ok">активен</span></td></tr>
+          <tr data-days="38" data-status="moderate"><td><span class="dot yellow"></span></td><td>проявленное продуктоведение</td><td>товароведение</td><td>11 янв 2026</td><td>38</td><td><span class="badge warn">замедлился</span></td></tr>
+          <tr data-days="45" data-status="moderate"><td><span class="dot yellow"></span></td><td>проект / иллюстрации онбординга</td><td>оптика</td><td>4 янв 2026</td><td>45</td><td><span class="badge warn">замедлился</span></td></tr>
+          <tr data-days="85" data-status="moderate"><td><span class="dot yellow"></span></td><td>Порядок на сайте и в МС</td><td>товароведение</td><td>25 ноя 2025</td><td>85</td><td><span class="badge warn">замедлился</span></td></tr>
+          <tr data-days="100" data-status="stale"><td><span class="dot orange"></span></td><td>👉 запросы и обратная связь</td><td>якорный круг</td><td>10 ноя 2025</td><td>100</td><td><span class="badge stale">застой</span></td></tr>
+          <tr data-days="101" data-status="stale"><td><span class="dot orange"></span></td><td>заказы и отгрузки контрагентам</td><td>товароведение</td><td>10 ноя 2025</td><td>101</td><td><span class="badge stale">застой</span></td></tr>
+          <tr data-days="108" data-status="stale"><td><span class="dot orange"></span></td><td>Финансы 2.0</td><td>ceo</td><td>3 ноя 2025</td><td>108</td><td><span class="badge stale">застой</span></td></tr>
+          <tr data-days="109" data-status="stale"><td><span class="dot orange"></span></td><td>Nastya</td><td>личные доски</td><td>2 ноя 2025</td><td>109</td><td><span class="badge stale">застой</span></td></tr>
+          <tr data-days="111" data-status="stale"><td><span class="dot orange"></span></td><td>поставки</td><td>товароведение</td><td>31 окт 2025</td><td>111</td><td><span class="badge stale">застой</span></td></tr>
+          <tr data-days="131" data-status="stale"><td><span class="dot red"></span></td><td>клипоны 2.0</td><td>бренд</td><td>10 окт 2025</td><td>131</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="145" data-status="stale"><td><span class="dot red"></span></td><td>Хозяюшка &lt;3 Петербург</td><td>ритейл опыт</td><td>26 сен 2025</td><td>145</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="145" data-status="stale"><td><span class="dot red"></span></td><td>Совещание «на ходу»</td><td>якорный круг</td><td>26 сен 2025</td><td>145</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="145" data-status="stale"><td><span class="dot red"></span></td><td>HR переход в ASANA + NOTION</td><td>счастливая команда</td><td>26 сен 2025</td><td>145</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="145" data-status="stale"><td><span class="dot red"></span></td><td>КРАСНЫЕ КАРТОЧКИ (разбор)</td><td>счастливая команда</td><td>26 сен 2025</td><td>145</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="145" data-status="stale"><td><span class="dot red"></span></td><td>новые доставки и оплаты</td><td>товароведение</td><td>26 сен 2025</td><td>145</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="145" data-status="stale"><td><span class="dot red"></span></td><td>архив PYE</td><td>товароведение</td><td>26 сен 2025</td><td>145</td><td><span class="badge dead">мёртв</span></td></tr>
+          <tr data-days="154" data-status="stale"><td><span class="dot red"></span></td><td>HR организовочная</td><td>счастливая команда</td><td>18 сен 2025</td><td>154</td><td><span class="badge dead">мёртв</span></td></tr>
         </tbody>
       </table>
     </div>
